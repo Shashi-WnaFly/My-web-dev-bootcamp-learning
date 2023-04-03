@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after pseudo selectors</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <style>
+        :root{
+            --primary-color: #2e4c7e;
+            --denger-color: #354259;
+        }
+        body {
+            width: 98vw;
+            height: 250vh;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            font-family: 'Rubik', sans-serif;
+        }
+
+        header::before {
+            background: url(css/photo-1620553967922-f3ca60bbc1ea.jpg) no-repeat center center/cover;
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            height: 133vh;
+            width: 100vw;
+            opacity: 0.3;
+            }
+
+            .navigation{
+                display: flex;
+                /* background-color: var(--denger-color); */
+                /* animation: background-color 2s ease-in-out 1s 3 alternate forwards; */
+                padding: 16px 0px;
+                padding-left: 60px;
+                /* border-radius: 33px; */
+        }
+
+        li:hover{
+            text-decoration: underline;
+        }
+        @keyframes background-color{
+            100%{background-color: var(--primary-color)
+            }
+        }
+        li {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            padding: 6px 44px;
+            cursor: pointer;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            margin: 170px 348px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .container2{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .card{
+            background-color: var(--primary-color);
+            margin: 50px 100px;
+            padding: 25px 25px;
+            width: 500px;
+            height: 200px;
+            transition: all 1s ease-in-out ;
+            border-radius: 3px;
+            line-height: 1.5;
+        }
+        .card:hover{
+            box-shadow:8px 6px gray;
+            text-shadow: 6px 6px #2e6434;
+            background-color: #067dcc;
+            width: 550px;
+            height: 250px;
+            border-radius: 10px;
+        }
+        #home{
+            text-decoration: underline;
+        }
+        .cod{
+            color: #0097ff;
+            font-family: 'Satisfy', cursive;
+            font-size: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li id="home">Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome To &nbsp;<span class="cod">Coding</span>&nbsp; World</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque tempore temporibus officiis corporis, veniam
+            dolores dolorum aperiam voluptatibus ducimus iure adipisci ea molestiae! Error eius, quam, maiores,
+            praesentium
+            accusantium ipsum minima reprehenderit sit placeat quaerat illum commodi.
+        </p>
+    </section>
+    <div class="container">
+        <div class="card" id="card1">
+            Card1
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aliquam nam, qui culpa magni dolorum ullam aspernatur ut! Suscipit labore blanditiis aliquid eos optio dolores natus, ab ex magnam vel officiis quod, molestiae, deserunt nisi. Cupiditate quidem enim maiores esse harum tenetur dolorum blanditiis! Eaque delectus cum maxime ut reprehenderit, quibusdam iusto repellendus numquam deserunt!</p>
+        </div>
+        <div class="card" id="card2">
+            Card2
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aliquam nam, qui culpa magni dolorum ullam aspernatur ut! Suscipit labore blanditiis aliquid eos optio dolores natus, ab ex magnam vel officiis quod, molestiae, deserunt nisi. Cupiditate quidem enim maiores esse harum tenetur dolorum blanditiis! Eaque delectus cum maxime ut reprehenderit, quibusdam iusto repellendus numquam deserunt!</p>
+        </div></div><hr>
+        <div class="container2">
+        <div class="card" id="card3">
+            Card3
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aliquam nam, qui culpa magni dolorum ullam aspernatur ut! Suscipit labore blanditiis aliquid eos optio dolores natus, ab ex magnam vel officiis quod, molestiae, deserunt nisi. Cupiditate quidem enim maiores esse harum tenetur dolorum blanditiis! Eaque delectus cum maxime ut reprehenderit, quibusdam iusto repellendus numquam deserunt!</p>
+        </div>
+        <div class="card" id="card4">
+            Card4
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aliquam nam, qui culpa magni dolorum ullam aspernatur ut! Suscipit labore blanditiis aliquid eos optio dolores natus, ab ex magnam vel officiis quod, molestiae, deserunt nisi. Cupiditate quidem enim maiores esse harum tenetur dolorum blanditiis! Eaque delectus cum maxime ut reprehenderit, quibusdam iusto repellendus numquam deserunt!</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

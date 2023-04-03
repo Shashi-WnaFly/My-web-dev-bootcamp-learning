@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css grid practicing</title>
+    <style>
+        .container{
+            display: grid;
+            background-color: rgb(208, 179, 83);
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'header header header header'
+            'section section section aside'
+            'hero hero hero hero'
+            ;
+        }
+
+        #header{
+            grid-area: header;
+        }
+
+        #section{
+            grid-area: section;
+        }
+
+        #aside{
+            grid-area: aside;
+        }
+
+        .item{
+            grid-area: hero;
+        }
+
+        #footer{
+            grid-area: footer;
+        }
+
+        .item{
+            border: 2px solid grey;
+            background-color: rgb(87, 183, 87);
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="header">I am going to build a grid template view 1</div>
+        <div class="item" id="section">I am going to build a grid template view 2</div>
+        <div class="item" id="aside">I am going to build a grid template view 3</div>
+        <div class="item">I am going to build a grid template view</div>
+        <div class="item">I am going to build a grid template view</div>
+        <div class="item">I am going to build a grid template view</div>
+        <div class="item">I am going to build a grid template view</div>
+        <div class="item">I am going to build a grid template view</div>
+        <div class="item" id="footer">I am going to build a grid template view</div>
+    </div>
+</body>
+</html>

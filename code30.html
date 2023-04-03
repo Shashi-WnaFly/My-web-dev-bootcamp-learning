@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            color: white;
+            background-color: orange;
+            display: none;
+            font-size: 50px;
+            text-align: center;
+        }
+
+        @media (max-width: 360px) {
+            #box1 {
+                display: block;
+                background-color: greenyellow;
+                color: black;
+            }
+        }
+        @media (min-width: 360px) and (max-width: 700px) {
+            #box2{
+                display: block;
+                background-color: forestgreen;
+            }
+        }
+        @media (min-width:700px) and (max-width: 950px){
+            #box3{
+                display: block;
+                color: rgb(209, 12, 45);
+            }
+        }
+        @media (min-width: 950px) and (max-width: 1250px){
+            #box4{
+                display: block;
+                background-color: papayawhip;
+                color: black;
+            }
+        }
+        @media (min-width: 1250px) {
+            #box5{
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box1">Windows</div>
+    <div class="box" id="box2">Android</div>
+    <div class="box" id="box3">Kali Linux</div>
+    <div class="box" id="box4">Office</div>
+    <div class="box" id="box5">Keyboard</div>
+
+</body>
+
+</html>

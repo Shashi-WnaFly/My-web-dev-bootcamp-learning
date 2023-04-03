@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector, pseudo selector</title>
+    <style>
+        .pant1 {
+            margin-top: 0;
+        }
+
+        body {
+            margin-top: 0;
+        }
+
+        H1 {
+            margin-top: 0;
+        }
+
+        /* .bigroom{
+            font-size: 22px;
+        } */
+        hr{
+            border-top: dotted;
+            width: 22px;
+            color: grey;
+            
+        }
+
+        a[target] {
+            text-decoration: none;
+        }
+        div>p{
+            background-color: brown;
+        }
+        div+p{
+            background-color: khaki;
+        }
+        li>p{
+            background-color: aquamarine;
+        }
+        .item:nth-child(2n+1){
+            color: red;
+        }
+        .item:nth-child(2n){
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bigroom">
+        <div class="pant1">
+            <h1>This is the First pant</h1>
+        </div>
+        <div class="pant2">This is the Second pant</div>
+        <div class="pant3">This is the Third pant</div>
+        <div class="pant4">This is the Fourth pant</div>
+        <hr>
+        <hr size="2" noshade>
+    </div>
+    <div><a href="https://google.com" target="_blank">My bio</a></div>
+    <div><a href="https://facebook.com">Patna</a></div>
+    <div>
+        
+        <ul>
+            <li>this is the para</li>
+            <li><p>this is the second para</p></li>
+            <li>this is the third para</li>
+            <li>this is the forth para</li>
+            <li>this is the fifth para</li>
+        </ul>
+    </div>
+<div>
+    <p>It is very friendly animal.</p>
+    <p>It is very nice to see you</p>
+    <p>What are doing here!</p>
+</div>
+<p>so what is your name?</p>
+<p>Where is situated the tajmahal.</p>
+<form action="">
+    <ul>
+        <li class="item" id="item-1">Mera naam ravikishan kumar hai.</li>
+        <li class="item" id="item-2">Mera naam ravikishan kumar hai.</li>
+        <li class="item" id="item-3">Mera naam ravikishan kumar hai.</li>
+        <li class="item" id="item-4">Mera naam ravikishan kumar hai.</li>
+        <li class="item" id="item-5">Mera naam ravikishan kumar hai.</li>
+        <li class="item" id="item-6">Mera naam ravikishan kumar hai.</li>
+        <li class="item" id="item-7">Mera naam ravikishan kumar hai.</li>
+        <li class="item" id="item-8">Mera naam ravikishan kumar hai.</li>
+        <li class="item" id="item-9">Mera naam ravikishan kumar hai.</li>
+        <li class="item" id="item-10">Mera naam ravikishan kumar hai.</li>
+    </ul>
+</form>
+</body>
+
+</html>

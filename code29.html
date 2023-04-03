@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>em, rem, vh, vw tutorial for understanding</title>
+    <style>
+        body{
+            height: 100vh;
+            border: 2px solid fuchsia;
+        }
+        .room{
+            font-size: 20px;
+        }
+        #first{
+            /* "em" ka size browser ke font se multiply hota hai or uske parent k font se multiply hota hai. */
+            /* "rem" ka size sirf browser ke font se multiply hota hai. */
+            font-size: 7em;
+        }
+    </style>
+</head>
+<body><div class="room">
+    <p class="line" id="first">This is the first para</p>
+    <p class="line" id="second">This is the second para</p>
+    <p class="line" id="third">This is the third para</p>
+</div>
+    
+</body>
+</html>

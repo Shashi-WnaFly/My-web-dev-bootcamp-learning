@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css position: static, relative, absolute, sticky. </title>
+    <style>
+        .dropdown-menu {
+            list-style: none;
+            padding: 3px;
+            margin: 3px;
+        }
+        .dropdown-item {
+            border: 2px solid green;
+            background-color: aquamarine;
+            text-decoration: none;
+            
+        }
+        .container {
+            border: 2px solid blueviolet;
+            background-color: aquamarine;
+            height: 4444px;
+        }
+
+        .box {
+            border: 2px solid green;
+            width: 150px;
+            height: 150px;
+            display: inline-block;
+            margin: 2px;
+        }
+
+        /* #box2 {
+            position: relative;
+            top: 45px;
+            left: 45px;
+        } */
+        /* #box3 {
+            position: absolute;
+            top: 45px;
+            left: 45px;
+        } */
+        /* #box4 {
+            position: fixed;
+            right: 4px;
+            bottom: 11px;
+            top: 2px; */
+
+
+        /* .box1 {
+            position: sticky;
+            right: 2px;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">box1</div>
+        <div class="box" id="box2">box2</div>
+        <div class="box" id="box3">box3</div>
+        <div class="box" id="box4">box4</div>
+    </div>
+    <div>
+        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdown" data-bs-toggle="dropdown"
+            aria-expanded="false">Dropdown</button>
+        <ul class="dropdown-menu" aria-labelledby="dropdown">
+            <li><a class="dropdown-item" href="#">Dropdown item</a></li>
+            <li><a class="dropdown-item" href="#">Dropdown item</a></li>
+            <li><a class="dropdown-item" href="#">Dropdown item</a></li>
+        </ul>
+        </div>
+</body>
+
+</html>

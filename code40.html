@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><style>
+        .box1{
+            height: 150px;
+            width: 150px;
+            border: 2px solid mediumorchid;
+            background-color: black;
+            color: #ffff;
+            text-align: center;
+            animation: box1 2s ease-in-out infinite;
+            transition: all;
+            position: relative;
+            animation: name duration timing-function delay iteration-count direction fill-mode;
+        }
+
+        @keyframes box1{
+            0%{
+                left: 0px;
+                top: 0px;
+            }
+            25%{
+                left: 250px;
+                top: 0px;
+            }
+            50%{
+                left: 250px;
+                top: 250px;
+            }
+            75%{
+                left: 0px;
+                top: 250px
+            }
+            100%{
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+    </style>
+</head>
+<body><div class="container">
+    <div class="box1">I am the only One.</div>
+</div>
+
+    
+</body>
+</html>

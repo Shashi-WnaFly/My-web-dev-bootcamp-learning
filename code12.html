@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float element</title>    
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,300&family=Lobster&family=Pacifico&family=Sacramento&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+            text-align: justify;
+        }
+        .Box {
+            background-color: antiquewhite;
+            width: 888px;
+            border: 3px solid goldenrod;
+            /* padding: 20px 20px; */
+            margin: 40px auto;
+        }
+        .items {
+            border: 2px solid royalblue;
+            font-family: 'Josefin Sans', sans-serif;
+            margin:13px 8px ;
+            padding: 12px 15px;
+            background-color: rgb(178, 166, 190);
+        }
+        #fruits {
+            float: left;
+            width: 48%;
+        }
+        #electronics {
+            float: right;
+            width: 48%;
+        }
+        #medicines {
+     clear: both;
+            width: 98%;
+        }
+        h2 {
+            /* align-self: auto; */
+            text-align: center;
+        }
+    </style>
+</head>
+<body><div class="Box">
+    <h2>These are my store items</h2>
+    <div id="fruits" class="items"><h3>Fruits</h3>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem expedita repellendus eligendi facere laudantium, nobis corrupti libero quo voluptates? Explicabo labore doloribus tempore itaque illo ipsum, fuga dolor laudantium officiis sunt atque et quos magni. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam laboriosam blanditiis quia at dolorum? Voluptatibus delectus, molestiae unde nisi atque cum doloribus, non pariatur, ab reiciendis iste facere provident vero ipsa ipsam aliquid sit!
+    </div>
+    <div id="electronics" class="items"><h3>Electronics</h3>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem expedita repellendus eligendi facere laudantium, nobis corrupti libero quo voluptates? Explicabo labore doloribus tempore itaque illo ipsum, fuga dolor laudantium officiis sunt atque et quos magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo cupiditate corrupti vero doloribus aut expedita, delectus quos explicabo. Quisquam voluptate ipsam corrupti aperiam? Maxime iure quisquam sed nam explicabo repellendus ut, recusandae vel ipsum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vitae ullam voluptate delectus facilis, aspernatur, veniam autem dignissimos, quaerat quibusdam quis quam. Expedita reiciendis minus suscipit maiores. Quod, ducimus molestiae illum laborum deserunt incidunt earum. 
+            
+    </div>
+    <div id="medicines" class="items"><h3>Medicines</h3>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem expedita repellendus eligendi facere laudantium, nobis corrupti libero quo voluptates? Explicabo labore doloribus tempore itaque illo ipsum, fuga dolor laudantium officiis sunt atque et quos magni.
+    </div>
+</div>
+<section><nav>
+    <a href="code3.html">code3</a>
+</nav></section>
+    
+</body>
+</html>

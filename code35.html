@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variables and custom var</title>
+    <style>
+        :root{
+            --primary-color: red;
+            --denger-color: green;
+        }
+        #box2{
+            background-color: var(--primary-color);
+            border: 2px solid var(--denger-color);
+        }
+        #box4{
+            box-shadow: 2px 2px var(--denger-color);
+            background-color: var(--primary-color);
+            
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+        }
+        .container1{
+            background-color: blueviolet;
+            
+        }
+        .joker{
+            height: 250px;
+            width: 250px;
+            background-color: rgb(218, 18, 18);
+            position: relative;
+            animation-name: shashi;
+            /* animation-duration: 2s;
+            animation-iteration-count: 2;
+            animation-delay: 2s;
+            animation-fill-mode: forwards;
+            animation-direction: normal;
+            animation-timing-function: ease-in-out;
+            animation-play-state: running; */
+            animation: shashi 2s ease-in-out 1s 3 alternate forwards;
+            animation: name duration timing-function delay iteration-count direction fill-mode;
+        }
+        .sentence{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(12, 125, 160);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            /* transition-property: all; */
+            transition: all 4s ease-in-out 1s;
+        }
+        .sentence:hover{
+            background-color: aqua;
+            width: 250px;
+            height: 250px;
+        }
+
+        @keyframes shashi {
+            from {
+                width:250px
+            }
+            to {
+                width: 1200px}
+        }
+        /* .version{
+            width: 200px;
+            height: 200px;
+            background-color: greenyellow;
+            position: relative;
+            animation: version 2s ease-in-out 1s 3 alternate forwards;
+        }
+        @keyframes version{
+            from{
+                width: 200px
+            }to{width: 900px}
+        } */
+        .container{
+            background-color: crimson;
+        }
+        .version{
+            display: flex;
+            height: 225px;
+            width:225px;
+            background-color: hotpink;
+            animation-name: golu;
+            position: relative;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            border-radius: 23px;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        @keyframes golu {
+            0%{
+                top:0px;
+                left:0px;
+            }
+            25%{
+                top: 0px;
+                left: 800px;
+            }
+            75%{
+                top:225px;
+                left: 800px;
+            }
+            100%{
+                top: 225px;
+                left: 0px;
+            }
+        }
+        </style>
+</head>
+<body><div class="container">
+    <div class="sentence">
+        This is the best version of it.
+    </div>
+</div>
+</body>
+</html>
